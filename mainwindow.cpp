@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->tableWidget->horizontalHeader()->setVisible(false);
+    ui->tableWidget->verticalHeader()->setVisible(false);
 }
 
 MainWindow::~MainWindow()
